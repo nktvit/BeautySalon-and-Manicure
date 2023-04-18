@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon - Home</title>
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+<header class="container mx-auto px-4 py-8">
+    <div class="flex justify-between items-center">
+        <div class="text-2xl font-semibold">
+            <span class="text-pink-500">Beauty</span><span class="text-gray-800">Salon and Manicure</span>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-rose-500">Home</a></li>
+                <li><a href="services.html" class="hover:text-rose-500">Services</a></li>
+                <li><a href="booking.html" class="text-rose-500">Booking</a></li>
+                <li><a href="gallery.html" class="hover:text-rose-500">Gallery</a></li>
+                <li>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition-colors">
+                        Book Now
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Booking -->
+<section class="bg-gray-50 container mx-auto px-4 py-16 md:py-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-12 md:mb-16 text-center">Book an
+                    Appointment</h2>
+                <form class="mt-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name"
+                                   class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Name</label>
+                            <input type="text" name="name"
+                                   class="w-full p-4 border border-gray-400 rounded-lg focus:outline-none focus:border-rose-500 transition duration-500"
+                                   required>
+                        </div>
+                        <div>
+                            <label for="email"
+                                   class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Email</label>
+                            <input type="email" name="email"
+                                   class="w-full p-4 border border-gray-400 rounded-lg focus:outline-none focus:border-rose-500 transition duration-500"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <label for="service"
+                               class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Service</label>
+                        <select id="service" name="service"
+                                class="w-full p-4 border border-gray-400 rounded-lg focus:outline-none focus:border-rose-500 transition duration-500">
+                            <option value="">-- Select a service --</option>
+                            <option value="Manicure">Manicure</option>
+                            <option value="Pedicure">Pedicure</option>
+                            <option value="Hair Styling">Hair Styling</option>
+                        </select>
+                    </div>
+                    <div class="mt-8">
+                        <label for="date" class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Date</label>
+                        <input type="date" id="date" name="date"
+                               class="w-full p-4 border border-gray-400 rounded-lg focus:outline-none focus:border-rose-500 transition duration-500"
+                               required>
+                    </div>
+                    <div class="mt-8">
+                        <label for="time" class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Time</label>
+                        <input type="time" id="time" name="time"
+                               class="w-full p-4 border border-gray-400 rounded-lg focus:outline-none focus:border-rose-500 transition duration-500"
+                               required>
+                    </div>
+                    <div class="mt-8">
+                        <button type="submit"
+                                class="bg-rose-500 text-white px-8 py-3 rounded-lg hover:bg-rose-400 focus:outline-none focus:bg-rose-400 transition duration-500">
+                            Book Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="bg-rose-500 rounded-lg shadow-lg text-white text-center px-24 py-48"
+                     style="background-image: url('./public/images/special-offer.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4">Special Offer!</h3>
+                    <p class="text-lg md:text-xl mb-4">Book an appointment today and get 10% off your first visit!</p>
+                    <a href="#"
+                       class="block bg-white text-rose-500 py-3 px-4 rounded-lg hover:bg-rose-200 transition-colors duration-500">Learn
+                        More</a>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<section class="container mx-auto px-4 py-16 md:py-24">
+    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-12 md:mb-16 text-center">Contact Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Address</h3>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed">77 Main St, Sligo</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Phone</h3>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed">(083) 658-2347</p>
+        </div>
+    </div>
+    <form class="mt-16 md:mt-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <label for="name" class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Name</label>
+                <input type="text" id="name" name="name"
+                       class="w-full p-4 border border-gray-400 rounded-lg focus:outline-none focus:border-rose-500 transition duration-500"
+                       required>
+            </div>
+            <div>
+                <label for="email" class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Email</label>
+                <input type="email" id="email" name="email"
+                       class="w-full p-4 border border-gray-400 rounded-lg focus:outline-none focus:border-rose-500 transition duration-500"
+                       required>
+            </div>
+        </div>
+        <div class="mt-8">
+            <label for="message" class="block text-lg md:text-xl font-medium text-gray-800 mb-2">Message</label>
+            <textarea id="message" name="message"
+                      class="w-full p-4 border border-gray-400 rounded-lg h-48 resize-none focus:outline-none focus:border-rose-500 transition duration-500"
+                      required></textarea>
+        </div>
+        <div class="mt-12">
+            <button type="submit"
+                    class="bg-rose-500 text-white px-8 py-3 rounded-lg hover:bg-rose-400 focus:outline-none focus:bg-rose-400 transition duration-500">
+                Send Message
+            </button>
+        </div>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-2xl font-bold">Beauty<span class="text-pink-400">Salon</span></a>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 items-center">
+                    <li><a href="index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="services.html" class="hover:text-pink-400">Services</a></li>
+                    <li><a href="booking.html" class="hover:text-pink-400">Booking</a></li>
+                    <li><a href="gallery.html" class="hover:text-pink-400">Gallery</a></li>
+                </ul>
+            </nav>
+
+
+            <div>
+                <span class="block mb-1">77 Main St, Sligo</span>
+                <span class="block">Phone: (083) 658-2347</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
